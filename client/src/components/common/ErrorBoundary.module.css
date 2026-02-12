@@ -1,0 +1,140 @@
+.errorBoundary {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+.errorContainer {
+  max-width: 500px;
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.errorIcon {
+  color: #ef4444;
+  margin-bottom: 1.5rem;
+}
+
+.errorTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  color: #6b7280;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.errorDetails {
+  text-align: left;
+  margin-bottom: 2rem;
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.errorDetails summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.errorStack {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: #dc2626;
+  white-space: pre-wrap;
+  word-break: break-all;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+}
+
+.errorActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.retryButton,
+.reloadButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-size: 0.875rem;
+}
+
+.retryButton {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.retryButton:hover {
+  background-color: #2563eb;
+}
+
+.reloadButton {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.reloadButton:hover {
+  background-color: #e5e7eb;
+}
+
+.helpSection {
+  text-align: left;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.helpText {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.helpList {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.helpList li {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 640px) {
+  .errorContainer {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .errorActions {
+    flex-direction: column;
+  }
+  
+  .retryButton,
+  .reloadButton {
+    width: 100%;
+  }
+}
